@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Website</title>
+    <style>
+            .tooltiptext {
+        visibility: hidden;
+        font-size: 16pt;
+      }
+
+      .tooltiptext text {
+        fill: #fff;
+      }
+
+      .tooltiptext rect {
+        fill: black;
+      }
+
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
   </head>
   <body>
     <main>
-        <h1>Welcome to My Website</h1> 
+        <h1>Схема</h1> 
         
 <svg
 width="171.09807mm"
@@ -2542,7 +2560,7 @@ xmlns:svg="http://www.w3.org/2000/svg">
   id="layer2"
   style="display:inline"
   transform="translate(-20.773082,-23.003247)">
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0834618;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3820)"
     id="path15764-2"
     cx="-75.192947"
@@ -2552,7 +2570,7 @@ xmlns:svg="http://www.w3.org/2000/svg">
     transform="rotate(-90,-2.6435838,-2.2759552)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0911312;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3826)"
     id="path15764-61"
     cx="-74.75531"
@@ -2562,7 +2580,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,-2.3280715,-1.7308299)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0911312;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3832)"
     id="path15764-61-0"
     cx="-70.670105"
@@ -2572,7 +2590,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,0.14923901,-4.7769116)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0838554;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3838)"
     id="path15764-8"
     cx="-73.371284"
@@ -2582,7 +2600,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,-1.3873469,-1.3668212)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.07748;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3844)"
     id="path15764-7"
     cx="-63.544453"
@@ -2592,7 +2610,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,-2.6195896,4.0221038)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.07748;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3850)"
     id="path15764-7-6"
     cx="-67.426895"
@@ -2602,7 +2620,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,-2.9928064,0.44230444)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.07748;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3856)"
     id="path15764-7-8"
     cx="-68.791664"
@@ -2700,7 +2718,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     style="fill:#008080;fill-opacity:0.604785;stroke:#000000;stroke-width:0.236139;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3952)"
     d="m 104.80903,112.35194 h 1.88944 v 2.77445 h 26.65233 v -11.64532 h -26.65233 v 2.44798 h -1.88944 z"
     transform="matrix(0.99479653,0,0,1.0258831,0.54649512,-2.2257427)"
-    onclick='displayFigureName("SCHOOL!")';
+    onmouseover='displayFigureName("Школа")';
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
  <rect
     style="fill:#ff0000;fill-opacity:0.604785;stroke:#000000;stroke-width:0.0902377;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3964)"
@@ -2712,13 +2730,18 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <path
+ <path class="tooltip"
     id="rect4168"
     style="fill:#d40000;fill-opacity:0.604785;stroke:#000000;stroke-width:0.106;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3970)"
     d="m 91.745907,70.48563 h 1.836581 v 3.32538 h 2.739366 v -3.32538 h 1.364777 v -6.38152 h -5.940724 z"
     transform="matrix(1.5269689,0,0,0.99744173,-49.610147,0.176412)"
-    onclick=";
-InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
+    onmouseover="displayFigureName('Дом')";
+InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" /> 
+    <g class="tooltiptext">
+      <rect x="90" y="62" width="120" height="1.4em" rx="6"/>
+      <text x="150" y="75" dy="0.4em" text-anchor="middle">Tooltip text</text>
+    </g>
+  
  <rect
     style="fill:#008080;fill-opacity:0.604785;stroke:#000000;stroke-width:0.106;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter3976)"
     id="rect4172"
@@ -2772,7 +2795,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:none;stroke-width:0.106;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4012)"
     id="path15764"
     cx="-93.320496"
@@ -2782,7 +2805,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,0.93320523,-0.19290093)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:none;stroke-width:0.0823305;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4018)"
     id="path15764-78"
     cx="-87.339264"
@@ -2792,7 +2815,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4024)"
     id="path15764-78-5"
     cx="-86.649551"
@@ -2802,7 +2825,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4030)"
     id="path15764-78-5-7"
     cx="-88.573242"
@@ -2812,7 +2835,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4036)"
     id="path15764-78-5-4"
     cx="-86.714966"
@@ -2822,7 +2845,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4042)"
     id="path15764-78-5-7-1"
     cx="-88.638657"
@@ -2832,7 +2855,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4048)"
     id="path15764-78-5-8"
     cx="-86.649109"
@@ -2842,7 +2865,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4054)"
     id="path15764-78-5-7-5"
     cx="-88.613449"
@@ -2852,7 +2875,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4060)"
     id="path15764-78-5-9"
     cx="-86.753708"
@@ -2862,7 +2885,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4066)"
     id="path15764-78-5-7-7"
     cx="-88.673737"
@@ -2872,7 +2895,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4072)"
     id="path15764-78-5-9-8"
     cx="-86.776398"
@@ -2882,7 +2905,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4078)"
     id="path15764-78-5-7-7-8"
     cx="-88.611099"
@@ -2892,7 +2915,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4084)"
     id="path15764-78-5-5"
     cx="-86.766937"
@@ -2902,7 +2925,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4090)"
     id="path15764-78-5-7-3"
     cx="-88.64679"
@@ -2912,7 +2935,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4096)"
     id="path15764-78-5-9-8-3"
     cx="-86.774246"
@@ -2922,7 +2945,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4102)"
     id="path15764-78-5-5-8"
     cx="-86.764786"
@@ -2932,7 +2955,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4108)"
     id="path15764-78-5-7-3-9"
     cx="-88.618515"
@@ -2942,7 +2965,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0660904;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4114)"
     id="path15764-0"
     cx="-64.386078"
@@ -2952,7 +2975,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,-0.35582274,-0.60084113)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0586657;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4120)"
     id="path15764-0-23"
     cx="-74.863327"
@@ -2962,7 +2985,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,1.1726528,-1.5128358)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0586657;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4126)"
     id="path15764-0-23-28"
     cx="-74.863327"
@@ -2972,7 +2995,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,1.0702088,-1.3938742)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0586657;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4132)"
     id="path15764-0-23-9"
     cx="-74.863327"
@@ -2982,7 +3005,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,1.2417063,-1.5784864)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0586657;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4138)"
     id="path15764-0-23-2"
     cx="-74.863327"
@@ -2992,7 +3015,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,1.0561563,-1.3916918)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0858322;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4144)"
     id="path15764-0-9"
     cx="-45.650024"
@@ -3002,7 +3025,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,-0.55640009,-1.4644893)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0858322;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4150)"
     id="path15764-0-9-8"
     cx="-38.633808"
@@ -3012,7 +3035,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0858322;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4156)"
     id="path15764-0-9-5"
     cx="-40.609203"
@@ -3022,7 +3045,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,0.13406104,0.98108718)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0858322;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4162)"
     id="path15764-0-2"
     cx="-42.302792"
@@ -3032,7 +3055,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,-0.66129633,-1.6905524)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0858322;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4168)"
     id="path15764-0-0"
     cx="-39.257835"
@@ -3042,7 +3065,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="rotate(-90,-0.6847809,-2.0849142)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0709472;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4174)"
     id="path15764-6"
     cx="-56.212021"
@@ -3107,7 +3130,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="translate(1.0004288,3.1927714)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})">
-   <ellipse onmouseover="displayFigureName('ELLIPSE')"
+   <ellipse
       style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4204)"
       id="path15764-78-5-7-6"
       cx="-116.84951"
@@ -3115,7 +3138,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})">
       rx="0.49912778"
       ry="0.57346398"
       transform="scale(-1)" />
-   <ellipse onmouseover="displayFigureName('ELLIPSE')"
+   <ellipse
       style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4210)"
       id="path15764-78-5-7-1-4"
       cx="-116.91492"
@@ -3123,7 +3146,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})">
       rx="0.49912778"
       ry="0.57346398"
       transform="scale(-1)" />
-   <ellipse onmouseover="displayFigureName('ELLIPSE')"
+   <ellipse
       style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4216)"
       id="path15764-78-5-7-5-3"
       cx="-116.88972"
@@ -3131,7 +3154,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})">
       rx="0.49912778"
       ry="0.57346398"
       transform="scale(-1)" />
-   <ellipse onmouseover="displayFigureName('ELLIPSE')"
+   <ellipse
       style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4222)"
       id="path15764-78-5-7-7-3"
       cx="-116.95"
@@ -3139,7 +3162,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})">
       rx="0.49912778"
       ry="0.57346398"
       transform="scale(-1)" />
-   <ellipse onmouseover="displayFigureName('ELLIPSE')"
+   <ellipse
       style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4228)"
       id="path15764-78-5-7-7-8-3"
       cx="-116.88737"
@@ -3147,7 +3170,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})">
       rx="0.49912778"
       ry="0.57346398"
       transform="scale(-1)" />
-   <ellipse onmouseover="displayFigureName('ELLIPSE')"
+   <ellipse
       style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4234)"
       id="path15764-78-5-7-3-8"
       cx="-116.92306"
@@ -3155,7 +3178,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})">
       rx="0.49912778"
       ry="0.57346398"
       transform="scale(-1)" />
-   <ellipse onmouseover="displayFigureName('ELLIPSE')"
+   <ellipse
       style="display:inline;fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0372613;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4240)"
       id="path15764-78-5-7-3-9-6"
       cx="-116.89478"
@@ -3377,7 +3400,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="matrix(1.6677895,0,0,0.98743975,-69.903212,1.1444299)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.065;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4378)"
     id="path14172"
     cx="128.24887"
@@ -3394,12 +3417,12 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
  <path
-    id="path14419-2"
+    id="path14419-2" onmouseover="displayFigureName('Храм')"
     style="display:inline;fill:#00ffff;fill-opacity:0.603922;stroke:#000000;stroke-width:0.253816;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4390)"
     d="m 518.08984,170.91992 -0.0723,0.0664 h -0.1836 l -5.21093,4.86523 0.0273,4.625 -0.0156,-0.0137 -7.54102,0.0371 -5.30273,5.08203 0.0391,7.15235 0.0351,0.0312 -0.0391,6.98829 5.30274,5.08203 7.54101,0.0371 0.0137,-0.0137 -0.002,0.35351 c -0.92064,0.91624 -1.67419,1.63464 -1.83398,1.71875 0.16969,0.49009 0.25988,8.4196 0.10156,8.91992 0.16479,0.0817 0.95991,0.80874 1.93164,1.73438 l 0.16211,6.33398 5.4082,5.07422 7.45703,-0.1875 5.13868,-5.33789 -0.16407,-6.37305 c 0.80895,-0.79966 1.46178,-1.41813 1.60157,-1.48828 -0.16946,-0.49609 -0.26138,-8.41116 -0.10352,-8.91992 -0.14942,-0.0747 -0.82704,-0.68901 -1.66406,-1.48047 l -0.002,-0.31836 0.0156,0.0137 7.54101,-0.0371 5.30274,-5.08203 -0.0391,-7.15234 -0.0352,-0.0312 0.0391,-7.04688 -5.30273,-5.08203 -7.54102,-0.0371 -0.0137,0.0137 0.0254,-4.625 -5.21094,-4.86524 -0.25,-0.002 -0.008,-0.006 -0.65039,0.004 z m 14.29102,35.76758 c 0.029,0.0145 0.0427,0.015 0.0312,-0.0117 -0.0114,-0.0266 -0.0217,-0.019 -0.0312,0.0117 z m 0.10352,8.91992 c 0.0101,0.0296 0.0186,0.0403 0.0293,0.0137 0.0104,-0.0259 -0.003,-0.0269 -0.0293,-0.0137 z m -21.53516,0.24414 c -0.0286,-0.0142 -0.0426,-0.0128 -0.0312,0.0137 0.0112,0.0263 0.0218,0.0162 0.0312,-0.0137 z m -0.10156,-8.91992 c -0.0101,-0.029 -0.0207,-0.0381 -0.0312,-0.0117 -0.0108,0.0268 0.003,0.0267 0.0312,0.0117 z"
     transform="matrix(0.28450684,0,0,0.28766984,-11.756157,-4.6640684)"
     onclick=";
-InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
+InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})">Храм</title> </path>
  <path
     id="path17918"
     style="fill:#ac9393;fill-opacity:1;fill-rule:evenodd;stroke-width:0.999999;filter:url(#filter4396)"
@@ -3407,9 +3430,9 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     transform="scale(0.26458333)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#008000;fill-opacity:0.9;stroke:#000000;stroke-width:0.0586657;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;filter:url(#filter4402)"
-    id="ellipse onmouseover="displayFigureName('ELLIPSE')"23426"
+    id="ellipse23426"
     cx="-74.863327"
     cy="105.15569"
     rx="0.78064036"
@@ -3500,7 +3523,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     y="77.468369"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#e9c9b0;fill-opacity:0.278431;stroke:#000000;stroke-width:0.106;stroke-linejoin:round"
     id="path6219"
     cx="158.14572"
@@ -3509,7 +3532,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
     ry="0.63015676"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="fill:#e9c9b0;fill-opacity:0.278431;stroke:#000000;stroke-width:0.106;stroke-linejoin:round"
     id="path6221"
     cx="162.41832"
@@ -3548,7 +3571,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})">
     transform="rotate(13.681888)"
     onclick=";
 InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
- <ellipse onmouseover="displayFigureName('ELLIPSE')"
+ <ellipse
     style="display:inline;fill:#ff0000;fill-rule:evenodd;stroke:#000000;stroke-width:0.065;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4378-9)"
     id="path14172-8"
     cx="86.528511"
@@ -3564,7 +3587,7 @@ InkWeb.setAtt({el:['path14172-8'], att:'fill', val:'red'})" />
   
   
   function displayFigureName(name) {
-            // document.getElementById('figure-name').firstChild.data = name;
+            document.getElementById('figure-name').firstChild.data = name;
             console.log(name);
         }
 var InkWeb = {
